@@ -4,9 +4,9 @@
 int main() {
     int age;
     char str[100];
-    scanf("%d %s\n",&age,&str);
+    scanf("%d %s",&age,&str);
     char str2[100];
-    scanf("\n%s",&str2);
+    scanf("%[^/n]",&str2);
     printf("Name: %s\nAge: %d\nHobby: %s",str,age,str2);
     return 0;
 }
