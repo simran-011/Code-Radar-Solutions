@@ -3,7 +3,7 @@
 int main() {
     char ch;
     scanf("%c",&ch);
-    if(isalpha(ch)) {
+    if(!(isalpha(ch))) {
         printf("Not an alphabet");
     } else if(islower(ch)) {
         printf("Lowercase");
