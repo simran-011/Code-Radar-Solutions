@@ -9,13 +9,13 @@ void printPrime(int n) {
     for(int i =2; i<n; i++) {
         int p = n%i;
         if(p==0) {
-            printf("not prime\n");
+            printf("Not Prime\n");
             return;
             
         }
        
     }
-    printf("prime");
+    printf("Prime");
     
         
         
