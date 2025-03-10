@@ -5,7 +5,7 @@
 int main() {
    int x,y;
    scanf("%d %d", &x, &y );
-   int a = power(y,2);
+   int a = pow(y,2);
    if(x==a) {
     printf("Yes");
    } else {
