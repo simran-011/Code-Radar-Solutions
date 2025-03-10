@@ -1,15 +1,30 @@
 #include <stdio.h>
-int main() {
-    int n;
-    scanf("%d",&n);
-    for(int i=2; i<n; i++) {
+
+void printPrime(int n) {
+    if(n<=1) {
+        printf("not prime");
+        return;
+    }
+    
+    for(int i =2; i<n; i++) {
         int p = n%i;
         if(p==0) {
-            printf("Not Prime");
-            break;
-        } 
-         
+            printf("not prime\n");
+            return;
+            
+        }
+       
     }
-    printf("Prime");
+    printf("prime");
+    
+        
+        
+    
+}
+int main() {
+   int a;
+   scanf("%d",&a);
+   printPrime(a);
+   
    
 }
