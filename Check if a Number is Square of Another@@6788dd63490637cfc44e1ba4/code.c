@@ -4,9 +4,9 @@
 
 int main() {
    int x,y;
-   scanf("%d %d", &x, &y );
-   int a = pow(y,2);
-   if(x==a) {
+   scanf("%d %d",&x,&y);
+   int s = y*y;
+   if(s==x) {
     printf("Yes");
    } else {
     printf("No");
