@@ -1,4 +1,15 @@
 #include <stdio.h>
+int main() {
+    int n;
+    scanf("%d",&n);
+    int arr[n];
+    for(int i=0; i<n; i++) {
+        scanf("%d",&arr[i]);
+    }
+    bbS(arr,n);
+    printArr(arr,n);
+    return 0;
+}
 void swap(int a, int b) {
     int temp = a;
     a = b;
@@ -19,15 +30,4 @@ void bbS(int arr[], int n) {
             
         }
     }
-}
-int main() {
-    int n;
-    scanf("%d",&n);
-    int arr[n];
-    for(int i=0; i<n; i++) {
-        scanf("%d",&arr[i]);
-    }
-    bbS(arr,n);
-    printArr(arr,n);
-    return 0;
 }
