@@ -2,19 +2,18 @@
 int main() {
     int n;
     scanf("%d",&n);
-    int k;
-    while(n!=0) {
+    
+    
         int arr[n];
         for(int i=0; i<n; i++) {
             scanf("%d",&arr[i]);
         }
-        
+        int k;
         scanf("%d",&k);
         
 
 
-        n--;
-    }
+        
     for(int i=n-k; i<n; i++) {
             printf("%d\n",arr[i]);
         }
