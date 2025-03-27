@@ -12,10 +12,11 @@ int maxEle(int arr[],int n) {
     for(int i=1; i<n-1; i++) {
         if(arr[i]>arr[i+1] && arr[i] > arr[i-1]) {
             peak = arr[i];
+            return peak;
             break;
         } 
     }
-    return peak;
+    return -1;
 }
 int main() {
     int t;
