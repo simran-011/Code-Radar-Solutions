@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int sorArr(int arr[], int n) {
+char sorArr(int arr[], int n) {
     for(int i=0; i<n; i++) {
         if(arr[i]>arr[i+1]) {
             return "Not Sorted";
