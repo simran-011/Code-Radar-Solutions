@@ -1,5 +1,5 @@
 #include <stdio.h>
-void oddEvenC(int arr, int n) {
+void oddEvenC(int arr[], int n) {
     int evenC = 0;
     int oddC = 0;
     for(int i=0; i<n; i++) {
