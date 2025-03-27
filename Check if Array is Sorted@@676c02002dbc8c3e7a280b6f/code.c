@@ -3,7 +3,7 @@
 void sorArr(int arr[], int n) {
     for(int i=0; i<n; i++) {
         if(arr[i]>arr[i+1]) {
-           printf("Not Sorted")
+           printf("Not Sorted");
             break;
             
         } 
@@ -19,7 +19,7 @@ int main() {
     for(int i=0; i<n; i++) {
         scanf("%d",&arr[i]);
     }
-    printf("%c",sorArr(arr,n));
+    sorArr(arr,n);
     
    
     return 0;
