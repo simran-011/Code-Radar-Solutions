@@ -18,7 +18,7 @@ int main() {
     for(int i=0; i<n; i++) {
         scanf("%d",&arr[i]);
     }
-    printf("%d",sorArr(arr,n));
+    printf("%c",sorArr(arr,n));
     
    
     return 0;
