@@ -1,15 +1,19 @@
 #include <stdio.h>
 
 void sorArr(int arr[], int n) {
+    if(n==1) {
+        printf("%d",arr[0]);
+    }
     for(int i=0; i<n; i++) {
         if(arr[i]>arr[i+1]) {
-           printf("Not Sorted");
-            break;
+           printf("Not Sorted\n");
+            return;
             
         } 
-        printf("Sorted");
+        
         
     }
+    printf("Sorted");
     
 }
 int main() {
