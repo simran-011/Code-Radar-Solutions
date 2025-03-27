@@ -3,7 +3,11 @@
 int maxEle(int arr[],int n) {
     int peak = 0;
     if(n<3) {
-        return 0;
+        if(arr[0]>arr[1]) {
+            return arr[0];
+        } else {
+            return arr[1];
+        }
     }
     for(int i=1; i<n-1; i++) {
         if(arr[i]>arr[i+1] && arr[i] > arr[i-1]) {
