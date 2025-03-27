@@ -13,7 +13,7 @@ int main() {
     int t;
     scanf("%d",&t);
     int arr1[t];
-    for(int i=0; i<n; i++) {
+    for(int i=0; i<t; i++) {
         scanf("%d",&arr1[i]);
     }
     printf("%d",maxEle(arr1,t));
