@@ -2,6 +2,7 @@
 
 void sorArr(int arr[], int n) {
     if(n==1) {
+        printf("Sorted");
         return;
     }
     for(int i=0; i<n; i++) {
