@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-int maxEle(int arr[],int n) {
+int maxEle(int arr[],int n1) {
     int max = 0;
-    for(int i=0; i<n; i++) {
+    for(int i=0; i<n1; i++) {
         if(arr[i]>max) {
             max = arr[i];
         }
