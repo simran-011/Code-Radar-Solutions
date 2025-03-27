@@ -13,9 +13,7 @@ int maxEle(int arr[],int n) {
         if(arr[i]>arr[i+1] && arr[i] > arr[i-1]) {
             peak = arr[i];
             break;
-        } else {
-            return -1;
-        }
+        } 
     }
     return peak;
 }
