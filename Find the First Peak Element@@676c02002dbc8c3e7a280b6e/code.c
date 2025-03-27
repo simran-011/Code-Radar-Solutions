@@ -2,6 +2,9 @@
 
 int maxEle(int arr[],int n) {
     int peak = 0;
+    if(n<3) {
+        printf("0\n");
+    }
     for(int i=1; i<n-1; i++) {
         if(arr[i]>arr[i+1] && arr[i] > arr[i-1]) {
             peak = arr[i];
