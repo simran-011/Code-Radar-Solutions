@@ -2,12 +2,12 @@
 
 void sorArr(int arr[], int n) {
     if(n==1) {
-        printf("%d",arr[0]);
+        printf("Sorted\n");
     }
     for(int i=0; i<n; i++) {
         if(arr[i]>arr[i+1]) {
            printf("Not Sorted\n");
-            return;
+           return;
             
         } 
         
