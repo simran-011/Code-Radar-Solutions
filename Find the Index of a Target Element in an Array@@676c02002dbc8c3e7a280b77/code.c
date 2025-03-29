@@ -3,6 +3,7 @@ void targetEle(int arr[], int n, int targetE) {
     for(int i=0; i<n; i++) {
         if(arr[i] == targetE) {
             printf("%d",i);
+            break;
         } else {
             printf("-1");
             return;
