@@ -1,7 +1,8 @@
 #include <stdio.h>
+#include <limits.h>
 void secondEl(int arr[], int n) {
-    int firstL = 0;
-    int secondL = -1;
+    int firstL = INT_MIN;
+    int secondL = INT_MIN;
     for(int i=0; i<n; i++) {
         if(arr[i] >firstL) {
             firstL = arr[i];
@@ -9,9 +10,7 @@ void secondEl(int arr[], int n) {
     }
     
     for(int i=0; i<n; i++) {
-        if(firstL<0) {
-        int secondL = 0;
-    }
+        
         if(arr[i]>secondL) {
             if(arr[i]!= firstL) {
                 secondL = arr[i];
@@ -19,7 +18,11 @@ void secondEl(int arr[], int n) {
         } 
         
     }
-    printf("%d\n",secondL);
+    if(secondL == INT_MIN) {
+        printf("-1");
+    } else {
+        printf("%d",secondL);
+    }
     
 }
 int main() {
