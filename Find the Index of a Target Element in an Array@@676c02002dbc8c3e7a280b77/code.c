@@ -16,7 +16,7 @@ int main() {
     }
     int targetEl;
     scanf("%d",&targetEl);
-    int a = targetE(arr,n,targetEl)l;
+    int a = targetE(arr,n,targetEl);
     printf("%d",a);
      
     
