@@ -10,7 +10,7 @@ void cntE(int arr[], int n) {
                 cnt++;
             }
         }
-        printf("%d %d",curr, cnt);
+        printf("%d %d\n",curr, cnt);
     }
 }
 int main() {
