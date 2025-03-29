@@ -17,8 +17,9 @@ void secondEl(int arr[], int n) {
                 secondL = arr[i];
             }
         } 
+        printf("%d\n",secondL);
     }
-    printf("%d\n",secondL);
+    
 }
 int main() {
     int n;
