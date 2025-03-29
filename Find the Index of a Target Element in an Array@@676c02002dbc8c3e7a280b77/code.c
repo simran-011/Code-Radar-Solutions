@@ -16,6 +16,7 @@ int main() {
     }
     int targetE;
     scanf("%d",&targetE);
+    targetE(arr,n,targetE);
      
     
     return 0;
