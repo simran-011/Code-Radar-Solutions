@@ -1,5 +1,5 @@
 #include <stdio.h>
-void maxCnt(int arr, int n) {
+void maxCnt(int arr[], int n) {
     for(int i=0; i<n; i++) {
         if(arr[i] == -1) {
             cntArr[i] = 0;
