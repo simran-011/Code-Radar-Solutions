@@ -16,7 +16,7 @@ void cntE(int arr[], int n) {
 int main() {
     int n;
     scanf("%d",&n);
-    arr[n];
+    int arr[n];
     scanf("%d",&arr[i]);
     cntE(arr,n);
     return 0;
