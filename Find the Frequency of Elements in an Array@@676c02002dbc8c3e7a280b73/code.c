@@ -11,7 +11,7 @@ void cntE(int arr[], int n) {
                 arr[j] = -1;
             }
         }
-        printf("%d %d",arr[i],cnt);
+        printf("%d %d\n",arr[i],cnt);
     }
 }
 int main() {
