@@ -22,7 +22,7 @@ void smallestMissing(int arr[],int n) {
 
             
         }
-        if(!found) {
+        if(found) {
             printf("%d",i);
             return;
         }
