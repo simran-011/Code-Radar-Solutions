@@ -16,7 +16,7 @@ int main() {
     for(int i=0; i<n; i++) {
         scanf("%d",&arr[i]);
     }
-    consecSeq(arr,n);
+    printf("%d",consecSeq(arr,n));
     
     return 0;
 }
