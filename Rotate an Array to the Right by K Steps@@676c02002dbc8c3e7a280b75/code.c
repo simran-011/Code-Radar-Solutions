@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <math.h>
+#include <stdlib.h>
 int main() {
     int n;
     scanf("%d",&n);
@@ -13,11 +13,12 @@ int main() {
         scanf("%d",&k);
         
     
-      
-    for(int i=fabs(n-k); i<n; i++) {
+    k = k%n;
+    shift_index = k; 
+    for(int i=shift_index; i<n; i++) {
             printf("%d ",arr[i]);
         }
-        for(int i=0; i<fabs(n-k); i++) {
+        for(int i=0; i<shift_index; i++) {
             printf("%d ",arr[i]);
         }
     return 0;
