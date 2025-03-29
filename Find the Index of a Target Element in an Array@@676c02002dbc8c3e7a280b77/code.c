@@ -9,7 +9,7 @@ int main() {
     int targetIdx;
     scanf("%d",&targetIdx);
     for(int i=0; i<n; i++) {
-        if(targetIdx>n || targetIdx<n)  {
+        if(targetIdx>n || targetIdx<0)  {
             printf("-1");
         } else  {
             
