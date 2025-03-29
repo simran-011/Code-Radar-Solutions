@@ -4,11 +4,9 @@ void targetEle(int arr[], int n, int targetE) {
         if(arr[i] == targetE) {
             printf("%d",i);
             return;
-        } else {
-            printf("-1");
-            return;
-        }
+        } 
     }
+    printf("-1");
     
 }
 int main() {
