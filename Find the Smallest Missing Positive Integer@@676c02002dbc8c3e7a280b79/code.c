@@ -13,16 +13,20 @@ void smallestMissing(int arr[],int n) {
         }
     }
     for(int i=smallestN+1; i<largestN; i++) {
+        int found = 0;
         for(int j=0; j<n; j++) {
-            if(arr[j] == 0) {
-                continue;
-            }
             if(arr[j] == i) {
-                continue;
+                found = 1;
+                break;
             }
+
+            
         }
-        printf("%d",i);
-        break;
+        if(!found) {
+            printf("%d",i);
+            return;
+        }
+        
     }
 }
 
