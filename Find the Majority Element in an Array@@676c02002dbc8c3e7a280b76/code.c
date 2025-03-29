@@ -16,6 +16,7 @@ void maxCnt(int arr[], int n) {
         }
         cntArr[i] = cnt;
 
+
     }
     int maxC = -1;
     for(int i=0; i<n; i++) {
@@ -23,6 +24,7 @@ void maxCnt(int arr[], int n) {
             maxC = cntArr[i];
         }
     }
+    printf("%d ",maxC);
 }
 int main() {
     int n;
