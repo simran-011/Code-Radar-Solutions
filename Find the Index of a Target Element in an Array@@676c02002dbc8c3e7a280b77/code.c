@@ -14,9 +14,9 @@ int main() {
     for(int i=0; i<n; i++) {
         scanf("%d",&arr[i]);
     }
-    int targetE;
-    scanf("%d",&targetE);
-    int a = targetE(arr,n,targetE);
+    int targetEl;
+    scanf("%d",&targetEl);
+    int a = targetE(arr,n,targetEl)l;
     printf("%d",a);
      
     
