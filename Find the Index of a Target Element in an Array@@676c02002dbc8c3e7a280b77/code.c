@@ -3,7 +3,7 @@ void targetEle(int arr[], int n, int targetE) {
     for(int i=0; i<n; i++) {
         if(arr[i] == targetE) {
             printf("%d",i);
-            break;
+            return;
         } else {
             printf("-1");
             return;
@@ -20,7 +20,7 @@ int main() {
     }
     int targetEl;
     scanf("%d",&targetEl);
-     targetEle(arr,n,targetEl);
+    targetEle(arr,n,targetEl);
    
      
     
