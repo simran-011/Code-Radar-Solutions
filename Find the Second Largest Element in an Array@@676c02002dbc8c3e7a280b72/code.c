@@ -10,7 +10,7 @@ void secondEl(int arr[], int n) {
     
     for(int i=0; i<n; i++) {
         if(firstL<0) {
-        secondL = 0;
+        int secondL = 0;
     }
         if(arr[i]>secondL) {
             if(arr[i]!= firstL) {
