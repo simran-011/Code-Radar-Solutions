@@ -1,7 +1,7 @@
 #include <stdio.h>
 void secondEl(int arr[], int n) {
     int firstL = 0;
-    int secondL = 0;
+    int secondL = -1;
     for(int i=0; i<n; i++) {
         if(arr[i] >firstL) {
             firstL = arr[i];
@@ -12,7 +12,7 @@ void secondEl(int arr[], int n) {
             if(arr[i]!= firstL) {
                 secondL = arr[i];
             }
-        }
+        } 
     }
     printf("%d\n",secondL);
 }
