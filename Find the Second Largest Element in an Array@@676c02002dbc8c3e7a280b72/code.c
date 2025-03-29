@@ -8,7 +8,7 @@ void secondEl(int arr[], int n) {
         }
     }
     if(firstL<0) {
-        secondL = 0
+        secondL = 0;
     }
     for(int i=0; i<n; i++) {
         if(arr[i]>secondL) {
