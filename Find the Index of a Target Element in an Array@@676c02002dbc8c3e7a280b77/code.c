@@ -1,4 +1,12 @@
 #include <stdio.h>
+int targetEle(int arr[], int n, int targetE) {
+    for(int i=0; i<n; i++) {
+        if(arr[i] == targetE) {
+            printf("%d",i);
+        }
+    }
+    return -1;
+}
 int main() {
     int n;
     scanf("%d",&n);
@@ -9,10 +17,6 @@ int main() {
     int targetE;
     scanf("%d",&targetE);
      
-    for(int i=0; i<n; i++) {
-        if(arr[i] == targetE) {
-            printf("%d",i);
-        }
-    }
+    
     return 0;
 }
