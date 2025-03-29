@@ -1,10 +1,11 @@
 #include <stdio.h>
-int targetEle(int arr[], int n, int targetE) {
+void targetEle(int arr[], int n, int targetE) {
     for(int i=0; i<n; i++) {
         if(arr[i] == targetE) {
             printf("%d",i);
         } else {
-            return -1;
+            printf("-1");
+            return;
         }
     }
     
@@ -18,8 +19,8 @@ int main() {
     }
     int targetEl;
     scanf("%d",&targetEl);
-    int a = targetEle(arr,n,targetEl);
-    printf("%d",a);
+     targetEle(arr,n,targetEl);
+   
      
     
     return 0;
