@@ -14,7 +14,7 @@ int main() {
         
     
     k = k%n;
-    shift_index = k; 
+    int shift_index = k; 
     for(int i=shift_index; i<n; i++) {
             printf("%d ",arr[i]);
         }
