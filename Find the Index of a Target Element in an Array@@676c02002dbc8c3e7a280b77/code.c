@@ -6,12 +6,13 @@ int main() {
     for(int i=0; i<n; i++) {
         scanf("%d",&arr[i]);
     }
-    int targetIdx;
-    scanf("%d",&targetIdx);
-    if(targetIdx>n || targetIdx<0) {
-        printf("-1");
-    } else {
-        printf("%d",arr[targetIdx]);
+    int targetE;
+    scanf("%d",&targetE);
+     
+    for(int i=0; i<n; i++) {
+        if(arr[i] == targetE) {
+            printf("%d",i);
+        }
     }
     return 0;
 }
