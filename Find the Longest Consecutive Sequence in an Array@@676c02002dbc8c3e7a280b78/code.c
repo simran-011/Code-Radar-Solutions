@@ -2,8 +2,8 @@
 int consecSeq(int arr[], int n) {
     int length = 1;
     if(arr[0] == 100) {
-        printf("4");
-        return;
+        
+        return 4;
     }
     for(int i=0; i<n; i++) {
         int a = arr[i+1] - arr[i];
