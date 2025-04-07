@@ -1,4 +1,4 @@
-void trackPlayerRanks(int ranked[],int n, int player[], int m) {
+void trackPlayerRanks(int ranked[],int n, int player[], int m, int result[]) {
    
     for(int i=0; i<m; i++) {
         int rank = 1;
@@ -11,7 +11,7 @@ void trackPlayerRanks(int ranked[],int n, int player[], int m) {
                 break;
             }
         }
-       printf("%d",rank); 
+       result[i] = rank;
     }
     
 }
