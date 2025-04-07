@@ -10,6 +10,7 @@ void trackPlayerRanks(int ranked[],int n, int player[], int m) {
                 break;
             }
         }
-        printf("%d",rank);
+        
     }
+    printf("%d",rank);
 }
