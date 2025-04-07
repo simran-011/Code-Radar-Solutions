@@ -1,4 +1,4 @@
-trackPlayerRanks(int ranked[],int n, int player[], int m) {
+void trackPlayerRanks(int ranked[],int n, int player[], int m) {
     for(int i=0; i<m; i++) {
         int rank = 1;
         for(int j=0; j<n; j++) {
