@@ -3,12 +3,18 @@
 
 int smallestNum(int arr[], int n ) {
     int smallest = arr[0];
+    int found = 0;
     for(int i=1; i<n; i++) {
         if(arr[i] < smallest && arr[i] !=0) {
             smallest = arr[i];
+            found = 1;
         }
     }
-    return smallest;
+    if(found) {
+        return smallest;
+    } else {
+        return 0;
+    }
 }
 
 int cntNonZeroes(int arr[], int n) {
@@ -26,6 +32,7 @@ void deflateBalloons(int arr[], int n) {
     printf("%d\n",c);
     while(c !=0) {
           int s = smallestNum(arr,n);
+          
           for(int i=0; i<n; i++) {
         
             arr[i] = abs(arr[i] - s);
