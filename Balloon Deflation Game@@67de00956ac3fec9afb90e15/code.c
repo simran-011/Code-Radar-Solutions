@@ -32,7 +32,9 @@ void deflateBalloons(int arr[], int n) {
     printf("%d\n",c);
     while(c !=0) {
           int s = smallestNum(arr,n);
-          
+          if(s==0) {
+            break;
+          }
           for(int i=0; i<n; i++) {
         
             arr[i] = abs(arr[i] - s);
