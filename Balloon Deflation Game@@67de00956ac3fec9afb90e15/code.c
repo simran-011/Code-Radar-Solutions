@@ -28,7 +28,7 @@ void deflateBalloons(int arr[], int n) {
           int s = smallestNum(arr,n);
           for(int i=0; i<n; i++) {
         
-            int arr[i] = abs(arr[i] - s);
+             arr[i] = abs(arr[i] - s);
         }
     }
     
