@@ -28,8 +28,8 @@ int cntNonZeroes(int arr[], int n) {
 }
 
 void deflateBalloons(int arr[], int n) {
-    int c = cntNonZeroes(arr,n);
-    printf("%d\n",c);
+    //int c = cntNonZeroes(arr,n);
+    printf("%d\n",n);
     while(c !=0) {
           int s = smallestNum(arr,n);
           if(s==0) {
