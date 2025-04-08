@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int smallestNum(int arr[], int n ) {
-    int smallest = arr[0]
+    int smallest = arr[0];
     for(int i=1; i<n; i++) {
         if(arr[i] < smallest && arr[i] !=0) {
             smallest = arr[i];
