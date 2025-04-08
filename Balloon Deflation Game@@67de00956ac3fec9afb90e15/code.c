@@ -24,12 +24,14 @@ int cntNonZeroes(int arr[], int n) {
 void deflateBalloons(int arr[], int n) {
     int c = cntNonZeroes(arr,n);
     printf("%d",c);
-    int s = smallestNum(arr,n);
-    for(int i=0; i<n; i++) {
+    while(c !=0) {
+          int s = smallestNum(arr,n);
+          for(int i=0; i<n; i++) {
         
-        int result = abs(arr[i] - s);
-
+            int result = abs(arr[i] - s);
+        }
     }
+    
 }
 
 
