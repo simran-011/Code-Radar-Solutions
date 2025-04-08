@@ -40,6 +40,7 @@ void deflateBalloons(int arr[], int n) {
             arr[i] = abs(arr[i] - s);
         }
         c = cntNonZeroes(arr,n);
+        printf("%d\n",c);
     }
     
 }
