@@ -7,10 +7,12 @@ int count(int n) {
     return cnt;
 }
 
-void printArr(int arr[], int n) {
+int printArr(int arr[], int n) {
+    int num = 0;
     for(int i=0; i<n; i++) {
-        printf("%d",arr[i]);
+        num = num * 10+ arr[i];
     }
+    return num;
 }
 
  void rev(int arr[], int n) {
@@ -26,11 +28,12 @@ void printArr(int arr[], int n) {
 int incrementToPrimeDigits(int n) {
     int rem =0;
     int c = count(n);
+    int i = c-1
     int originalNo = n;
     int primeArr[c];
     while(n!=0) {
        rem = n%10;
-       for(int i=0; i<c; i++)  {
+       
             if(rem == 8 || rem==9 || rem == 1 || rem==0) {
                 primeArr[i] = 2;
             } else if(rem == 4 || rem == 3) {
@@ -38,8 +41,9 @@ int incrementToPrimeDigits(int n) {
             } else if(rem == 5 || rem == 6) {
                 primeArr[i] = 7;
             }
-       }
+       
        n = n/10;
+       i--;
     }
     rev(primeArr,c);
     int result = printArr(primeArr,c);
