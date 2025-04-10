@@ -9,11 +9,12 @@ int countGlovePairs(int gloves[], int n) {
             }
             if(curr == gloves[j]) {
                 cnt++;
+                freq++;
                 gloves[j] = -1;
                 break;
             }
         }
-        freq++;
+        
 
     }
     return freq;
