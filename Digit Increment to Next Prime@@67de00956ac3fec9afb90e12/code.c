@@ -23,7 +23,7 @@ void printArr(int arr[], int n) {
         
     }
 }
-void incrementToPrimeDigits(int n) {
+int incrementToPrimeDigits(int n) {
     int rem =0;
     int c = count(n);
     int originalNo = n;
@@ -42,6 +42,7 @@ void incrementToPrimeDigits(int n) {
        n = n/10;
     }
     rev(primeArr,c);
-    printArr(primeArr,c);
+    int result = printArr(primeArr,c);
+    return result;
 }
 
