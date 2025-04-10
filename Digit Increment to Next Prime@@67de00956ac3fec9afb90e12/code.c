@@ -28,7 +28,7 @@ int printArr(int arr[], int n) {
 int incrementToPrimeDigits(int n) {
     int rem =0;
     int c = count(n);
-    int i = c-1
+    int i = c-1;
     int originalNo = n;
     int primeArr[c];
     while(n!=0) {
