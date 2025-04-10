@@ -40,6 +40,8 @@ int incrementToPrimeDigits(int n) {
                 primeArr[i] = 5;
             } else if(rem == 5 || rem == 6) {
                 primeArr[i] = 7;
+            } else if(rem==2) {
+                primeArr[i] = 3;
             }
        
        n = n/10;
