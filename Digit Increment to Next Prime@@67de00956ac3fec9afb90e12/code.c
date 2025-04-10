@@ -34,7 +34,7 @@ int incrementToPrimeDigits(int n) {
     while(n!=0) {
        rem = n%10;
        
-            if(rem == 8 || rem==9 || rem == 1 || rem==0) {
+            if(rem == 8 || rem==9 || rem == 1 || rem==0 || rem==7) {
                 primeArr[i] = 2;
             } else if(rem == 4 || rem == 3) {
                 primeArr[i] = 5;
