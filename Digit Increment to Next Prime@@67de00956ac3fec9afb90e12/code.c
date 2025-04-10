@@ -31,6 +31,9 @@ int incrementToPrimeDigits(int n) {
     int i = c-1;
     int originalNo = n;
     int primeArr[c];
+    if(n==0) {
+        return 2;
+    }
     while(n!=0) {
        rem = n%10;
        
