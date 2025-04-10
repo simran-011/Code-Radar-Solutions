@@ -45,7 +45,7 @@ int incrementToPrimeDigits(int n) {
        n = n/10;
        i--;
     }
-    rev(primeArr,c);
+    //rev(primeArr,c);
     int result = printArr(primeArr,c);
     return result;
 }
