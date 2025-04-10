@@ -39,7 +39,7 @@ void incrementToPrimeDigits(int n) {
                 primeArr[i] = 7;
             }
        }
-       n /= 10;
+       n / = 10;
     }
     rev(primeArr,c);
     printArr(primeArr,c);
