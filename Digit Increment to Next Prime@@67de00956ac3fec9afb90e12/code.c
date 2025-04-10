@@ -9,7 +9,7 @@ int count(int n) {
 
 int printArr(int arr[], int n) {
     int num = 0;
-    for(int i=n; i<=0; i++) {
+    for(int i=0; i<n; i++) {
         num = num * 10+ arr[i];
     }
     return num;
